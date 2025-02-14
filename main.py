@@ -143,7 +143,7 @@ def train_tetris(episodes=500):
     return agent, scores
 
 # RUN TRAINING
-agent, scores = train_tetris(episodes=300)
+agent, scores = train_tetris(episodes=10000)
 
 # PLOT RESULTS
 plt.plot(scores)
