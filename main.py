@@ -8,7 +8,6 @@ import pygame
 import time
 
 # Pygame
-
 # Constants
 WIDTH, HEIGHT = 300, 600
 GRID_SIZE = 30
@@ -387,8 +386,8 @@ if __name__ == "__main__":
     env = Tetris()  # Use your Tetris environment
     agent = DQNAgent(env.observation_space, env.action_space)
 
-    num_episodes = 100
-    episode_rewards, episode_losses = train(env, agent, num_episodes, visualize_every=100, save_every=100)
+    num_episodes = 10000
+    episode_rewards, episode_losses = train(env, agent, num_episodes, visualize_every=100, save_every=500)
 
     # Plotting results (optional)
     import matplotlib.pyplot as plt
